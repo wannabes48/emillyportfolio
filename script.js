@@ -2,9 +2,17 @@
 function openModal(fileUrl) {
     const modal = document.getElementById('certModal');
     const frame = document.getElementById('certFrame');
+    const fallback = document.getElementById('mobile-fallback');
+    const downloadLink = document.getElementById('download-link');
     if (modal && frame) {
         frame.src = fileUrl;
         modal.style.display = "block";
+
+        if (window.innerWidth < 768) {
+            fallback.style.display = "block";
+        } else {
+            fallback.style.display = "none";
+        }
     }
 }
 
@@ -14,6 +22,14 @@ function closeModal() {
     if (modal && frame) {
         modal.style.display = "none";
         frame.src = "";
+    }
+}
+
+// Close modal if user clicks outside the box
+window.onclick = function(event) {
+    const modal = document.getElementById('certModal');
+    if (event.target == modal) {
+        closeModal();
     }
 }
 

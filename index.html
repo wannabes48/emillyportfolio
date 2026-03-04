@@ -12,7 +12,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://emillyobadiahportfolio.vercel.app/">
     <meta property="og:title" content="Emilly Bonareri Obadiah | Professional Nursing Portfolio">
-    <meta property="og:description" content="Skilled KRCHN with clinical experience at Homabay County Teaching and Referral Hospital. Specialized in MCH, Triage, and Community Health.">
+    <meta property="og:description" content="Skilled KRCHN with clinical experience at Homabay County Teaching and Referral Hospital. Specialized in MCH, Triage and Community Health.">
     <meta property="og:image" content="emilly-photo.jpg">
 
     <meta name="geo.region" content="KE-110" />
@@ -20,6 +20,7 @@
     <meta name="geo.position" content="-1.286389;36.817223" />
     <meta name="ICBM" content="-1.286389, 36.817223" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta name="google-site-verification" content="yCWkx_g_st56DQ35eL4It-2tnZCBCN7bC-pB6aNyRgM" />
 </head>
 <body>
@@ -53,30 +54,55 @@
 <section id="certificates">
     <h2>Certifications & Professional Development</h2>
     <div class="gallery-grid">
-        <div class="glass-card">
+        <div class="glass-card cert-preview-card" onclick="openModal('bls.jpg')">
+            <div class="preview-wrapper">
+                <img src="bls.jpg" alt="BLS Certificate Preview">
+                <div class="preview-overlay">
+                    <span><i class="fas fa-search-plus"></i>Click to View Full Certificate</span>
+                </div>
+            </div>
             <h3>BLS</h3>
             <p>Certified by Kenya Red Cross Training Institute</p>
-            <button class="view-btn" onclick="openModal('Student_eCard.pdf')">View Certificate</button>
         </div>
-        <div class="glass-card">
+        <div class="glass-card cert-preview-card" onclick="openModal('acls.jpg')">
+             <div class="preview-wrapper">
+                <img src="acls.jpg" alt="ACLS Certificate Preview">
+                <div class="preview-overlay">
+                    <span><i class="fas fa-search-plus"></i>Click to View Full Certificate</span>
+                </div>
+            </div>
             <h3>ACLS</h3>
             <p>Certified by Kenya Red Cross Training Institute</p>
-            <button class="view-btn" onclick="openModal('Student_eCard-1.pdf')">View Certificate</button>
         </div>
-        <div class="glass-card">
+        <div class="glass-card cert-preview-card" onclick="openModal('computer-cert.jpg')">
+            <div class="preview-wrapper">
+                <img src="computer-cert.jpg" alt="Computer Proficiency Certificate Preview">
+                <div class="preview-overlay">
+                    <span><i class="fas fa-search-plus"></i>Click to View Full Certificate</span>
+                </div>
+            </div>
             <h3>Computer Proficiency</h3>
             <p>Advanced Computer Packages</p> 
-            <button class="view-btn" onclick="openModal('computer-cert.pdf')">View Certificate</button>
         </div>
-        <div class="glass-card">
+        <div class="glass-card cert-preview-card" onclick="openModal('krchn-diploma.jpg')">
+            <div class="preview-wrapper">
+                <img src="krchn-diploma-preview.jpg" alt="KRCHN Diploma Preview">
+                <div class="preview-overlay">
+                    <span><i class="fas fa-search-plus"></i>Click to View Full Diploma</span>
+                </div>
+            </div>
             <h3>KRCHN Diploma</h3>
             <p>KMTC Homabay</p>
-            <button class="view-btn" onclick="openModal('diploma.pdf')">View Certificate</button>
         </div>
-        <div class="glass-card">
+        <div class="glass-card cert-preview-card" onclick="openModal('nursing-license.jpg')">
+            <div class="preview-wrapper">
+                <img src="nursing-license-preview.jpg" alt="Nursing License Preview">
+                <div class="preview-overlay">
+                    <span><i class="fas fa-search-plus"></i>Click to View Full License</span>
+                </div>
+            </div>
             <h3>Nursing License</h3>
             <p>Registered by Nursing Council of Kenya</p>
-            <button class="view-btn" onclick="openModal('nursing-license.pdf')">View Certificate</button>
         </div>
     </div>
 </section>
@@ -113,7 +139,17 @@
         <p><strong>Phone:</strong> +254 712 355 286</p>
         <p><strong>Email:</strong> <a href="mailto:emillyobadiah13@gmail.com">emillyobadiah13@gmail.com</a></p>
         <div class="social-links">
-            <a href="https://wa.me/254712355286" class="social-btn">WhatsApp Me</a>
+            <a href="https://wa.me/254712355286" class="social-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp Me
+            </a>
+    
+            <a href="mailto:emillyobadiah13@gmail.com" class="social-btn">
+                <i class="fas fa-envelope"></i> Email Me
+            </a>
+    
+            <a href="https://linkedin.com/in/emilly-obadiah-a755953a1" class="social-btn" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
         </div>
     </div>
 </section>
@@ -121,7 +157,7 @@
     <section id="about">
         <h2>Professional Bio</h2>
         <p>
-            I am a dedicated and compassionate Kenya Registered Community Health Nurse (KRCHN) and a graduate of Kenya Medical Training College. My clinical background spans high-pressure environments, including Medical-Surgical units and Maternal & Child Health clinics at Homabay County Teaching and Referral Hospital. I specialize in clinical procedures such as wound care, catheterization, and IV medication administration, alongside a strong foundation in KEPI immunization and community health advocacy. I am deeply committed to patient advocacy and providing holistic care that bridges the gap between hospital-based treatment and community-based wellness.
+            I am a dedicated and compassionate Kenya Registered Community Health Nurse (KRCHN) and a graduate of Kenya Medical Training College. My clinical background spans high-pressure environments, including Medical-Surgical units and Maternal & Child Health clinics at Homabay County Teaching and Referral Hospital. I specialize in clinical procedures such as IV medication administration, alongside a strong foundation in KEPI immunization and community health advocacy. I am deeply committed to patient advocacy and providing holistic care that bridges the gap between hospital-based treatment and community-based wellness.
         </p>
     </section>
 
@@ -183,7 +219,20 @@
     </section>
 
     <footer>
-        <p>Contact: emillyobadiah13@gmail.com | Nairobi, Kenya</p>
+        <p>emillyobadiah13@gmail.com | Nairobi, Kenya</p>
     </footer>
+
+    <div id="certModal" class="modal" style="display: none;">
+    <div class="modal-content glass-card">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-body">
+            <iframe id="certFrame" src="" width="100%" height="600px" style="border:none; border-radius:10px;"></iframe>
+            <div id="mobile-fallback" style="display:none; text-align:center; padding:20px;">
+                <p>Your browser doesn't support PDF previews.</p>
+                <a id="download-link" href="#" class="view-btn" download>Download to View</a>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
